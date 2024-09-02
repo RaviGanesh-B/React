@@ -1,5 +1,11 @@
+
+*{
+  margin: 30px;
+}
 .App {
   text-align: center;
+  padding: 10px;
+  gap: 50;
 }
 
 .App-logo {
