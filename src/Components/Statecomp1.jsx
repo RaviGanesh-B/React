@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const StateComp1 = () => {
-
+    console.log("working good");
     const[state,setstate] = useState("throw out the heaven and earth")
 
     return(
