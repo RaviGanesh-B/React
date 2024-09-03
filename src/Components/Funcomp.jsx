@@ -94,6 +94,7 @@ export const Child3 = () => {
                 Child-3
             </h1>
             <GrandChild4/>
+            <GrandChild5/>
         </div>
     )
 }
@@ -108,3 +109,12 @@ export const GrandChild4 = () =>{
     )
 }
 
+export const GrandChild5 = () => {
+    return(
+        <div>
+            <h1>
+                GrandChild-5
+            </h1>
+        </div>
+    )
+}

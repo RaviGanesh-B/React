@@ -1,34 +1,33 @@
 import { useState } from "react";
 
-const StateComp = () => {
+const Increment = () => {
 
-    const [state,setstate] = useState("Hello");
+    const handleIncerement = () => {
+     if(count<10){
+        setcount(count+1)
+     }
+    }
 
-  
+const [count,setcount] = useState(1)
+
     return(
-        <div style = {
-            {
-                width: "100%",
-                height: "100vh",
-                alignItems:"center",
-                display:"flex",
-                flexDirection:"column",
-                justifyContent:"center",
-            
-                gap:"10px",
-
-
-            }
-        }>
-
-   
-        <p>{state}</p>
-
-         <button onClick={() => setstate("I'm rg")} style={{width:"200px"}}>
-            CLICK
-         </button>
+        <div 
+         style = {{
+            width:"100%",
+            height:"400px",
+            alignItems:"center",
+            justifyContent:"center",
+            display:"flex",
+            flexDirection:"column"
+         }}>
+        <p>{count}</p>
+        <button onClick={handleIncerement}>
+            Power up
+        </button>
         </div>
     )
 }
 
-export default StateComp;
+
+
+export default Increment;
